@@ -8,7 +8,7 @@ function minutesToSeconds(minutes) {
 function convert() {
     // Get the value entered in the "minutes" input field
     let minutesInput = document.getElementById("minutes").value;
-    // Convert the input value to a floating-point number
+    // Convert the input value to a pasreFloat
     let minutes = parseFloat(minutesInput);
     // Check if the input is not a number (NaN)
     if (isNaN(minutes)) {
