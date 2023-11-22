@@ -18,7 +18,7 @@ function convert() {
     }
 
     let seconds = minutesToSeconds(minutes);
-    // Get the HTML element where the result will be displayed
+    // Get the HTML element where the result will be shown
     let resultElement = document.getElementById("result");
     // The the inner text of the result element to show the conversion result
     resultElement.innerText = minutes + " minutes = " + seconds + " seconds.";
