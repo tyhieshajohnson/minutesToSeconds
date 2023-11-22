@@ -1,0 +1,41 @@
+/* Body background color in grey */
+body {
+    background-color: white;
+    color: white; /* Text color in white */
+    font-family: Arial, sans-serif; /* Set font family */
+}
+
+/* Container styles */
+#converter-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: pink;
+    border-radius: 7px;
+    box-shadow: 0 20px 67px rgba(255, 0, 157, 0.9); 
+    justify-content: center;
+    margin-top: 15%;
+}
+
+/* Heading color in pink */
+h1 {
+    color: white;
+}
+
+/* Label and input background color in pink */
+label, input {
+    background-color: pink;
+}
+
+/* Button background color in pink */
+button {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+/* Result text color in pink */
+#result {
+    color: black;
+}
