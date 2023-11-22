@@ -1,6 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the convert button element
+    let convertButton = document.getElementById("convertButton");
+
+    // Add an event listener to the button
+    convertButton.addEventListener("click", function() {
+        // Call the convert function when the button is clicked
+        convert();
+    });
+});
+
 // This function converts minutes to seconds
 function minutesToSeconds(minutes) {
-    // Multiply the input minutes by 60 to get the equivalent seconds
     return minutes * 60;
 }
 
@@ -8,11 +18,11 @@ function minutesToSeconds(minutes) {
 function convert() {
     // Get the value entered in the "minutes" input field
     let minutesInput = document.getElementById("minutes").value;
-    // Convert the input value to a pasreFloat
+    // Convert the input value to a parseFloat
     let minutes = parseFloat(minutesInput);
     // Check if the input is not a number (NaN)
     if (isNaN(minutes)) {
-        // If the input is not a valid number, show an alert message
+        // invalid number show an alert message
         alert("Valid Minutes Required");
         return;
     }
@@ -20,6 +30,6 @@ function convert() {
     let seconds = minutesToSeconds(minutes);
     // Get the HTML element where the result will be shown
     let resultElement = document.getElementById("result");
-    // The the inner text of the result element to show the conversion result
+    // Set the inner text of the result element to show the conversion result
     resultElement.innerText = minutes + " minutes = " + seconds + " seconds.";
 }
