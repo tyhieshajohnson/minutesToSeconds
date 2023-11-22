@@ -7,7 +7,7 @@ function convert() {
     let minutes = parseFloat(minutesInput);
 
     if (isNaN(minutes)) {
-        alert("Enter a valid number for minutes.");
+        alert("Valid Minutes Required");
         return;
     }
 
